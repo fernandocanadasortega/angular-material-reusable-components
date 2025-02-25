@@ -1,0 +1,26 @@
+<!-- Muestra un backdrop por debajo del expansionOverlayTemplate -->
+<div #backdrop id="backdrop" *ngIf="showBackdrop" (click)="toggleOverlayExpansion()"></div>
+<ng-container *ngTemplateOutlet="expansionOverlayTemplate"></ng-container>
+
+
+<!-- #region TEMPLATES QUE PROYECTAN EL CONTENIDO -->
+<ng-template #expansionOverlayTemplate>
+  <!-- Proyectar contenido con el atributo 'baseComponent' -->
+  <div #baseComponentWrapper id="baseComponentWrapper" (click)="toggleOverlayExpansion()"
+    *ngIf="!pushMode || verticalAlign !== 'top'">
+    <ng-content select="[baseComponent]"></ng-content>
+  </div>
+
+  <!-- Proyectar contenido con el atributo 'expansionComponent' -->
+  <div #expansionComponentWrapper id="expansionComponentWrapper">
+    <ng-content select="[expansionComponent]"></ng-content>
+  </div>
+
+  <!-- Proyectar contenido con el atributo 'baseComponent' -->
+  <!-- Proyecta el contenido con el atributo 'baseComponentPushTop' UNICAMENTE utilizada para mostrar mostrar el expansion-overlay por encima del componente baseComponent cuando está activo el pushMode y verticalAlign: top -->
+  <div #baseComponentWrapper id="baseComponentWrapper" (click)="toggleOverlayExpansion()"
+    *ngIf="pushMode && verticalAlign === 'top'">
+    <ng-content select="[baseComponentPushTop]"></ng-content>
+  </div>
+</ng-template>
+<!-- #endregion -->

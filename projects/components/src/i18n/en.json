@@ -1,0 +1,24 @@
+{
+  "component1": {
+    "message": "Component 1 works!"
+  },
+  "component2": {
+    "message": "Component 2 works!"
+  },
+  "password_strength": {
+    "password_strength": "Password Strength",
+    "empty": "Empty",
+    "very_weak": "Very Weak",
+    "weak": "Weak",
+    "normal": "Normal",
+    "strong": "Strong",
+    "very_strong": "Very Strong",
+    "password_composition": "Password Composition",
+    "password_composition_body": "A secure password should contain at least the following characters",
+    "password_composition_length": "At least 12 characters in length",
+    "password_composition_lowercase": "Lowercase",
+    "password_composition_uppercase": "Uppercase",
+    "password_composition_symbols": "Symbols (?#@...)",
+    "password_composition_numbers": "Numbers"
+  }
+}
