@@ -24,8 +24,8 @@
       "dom"
     ],
     "paths": {
-      "reusable-components": [
-        "dist/components"
+      "angular-material-reusable-components/*": [
+        "dist/angular-material-reusable-components/*"
       ]
     },
   },

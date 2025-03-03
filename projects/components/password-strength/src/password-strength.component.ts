@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
-import { ExpansionOverlay } from '../expansion-overlay/expansion-overlay.component';
+import { ExpansionOverlay } from 'angular-material-reusable-components/expansion-overlay';
 // import { TranslationService } from '../../services/translation.service';
 
 class PasswordStrengthTypes {
