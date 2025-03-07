@@ -5,7 +5,9 @@
     "start:showcase": "ng serve showcase",
     "build:components": "ng build components",
     "build:components:watch": "ng build components --watch",
-    "publish:components": "cd ./dist/components && npm publish"
+    "publish:components": "cd ./dist/components && npm publish",
+    "build.lib": "ng build components && npm run copy-styles",
+    "copy-styles": "cpx \"./projects/components/assets/**/*.*\" \"./dist/components/assets/\""
   },
   "dependencies": {
     "@angular/animations": "^16.0.0",

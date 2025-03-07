@@ -1,0 +1,14 @@
+@import "../../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css" only screen and (prefers-color-scheme: light);
+@import "../../../node_modules/@angular/material/prebuilt-themes/purple-green.css" only screen and (prefers-color-scheme: dark);
+
+.separator {
+  flex: 1 1 auto;
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  overflow-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+}

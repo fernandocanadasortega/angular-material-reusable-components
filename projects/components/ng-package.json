@@ -3,5 +3,8 @@
   "dest": "../../dist/angular-material-reusable-components",
   "lib": {
     "entryFile": "public-api.ts"
-  }
+  },
+  "assets": [
+    "styles/*.*"
+  ]
 }
