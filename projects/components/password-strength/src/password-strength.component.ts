@@ -37,7 +37,8 @@ interface PasswordStrengthRequirement {
   templateUrl: './password-strength.component.html',
   styleUrls: ['./password-strength.component.scss'],
   standalone: true,
-  imports: [CommonModule, FormsModule, /* TranslateModule, */ RouterModule, MatFormFieldModule, MatIconModule, MatCardModule, ExpansionOverlay]
+  imports: [CommonModule, FormsModule, /* TranslateModule, */ RouterModule, MatFormFieldModule, MatIconModule, MatCardModule, ExpansionOverlay],
+  encapsulation: ViewEncapsulation.None
 })
 export class PasswordStrengthComponent {
 

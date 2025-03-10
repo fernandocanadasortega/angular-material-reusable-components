@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "../../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css" only screen and (prefers-color-scheme: light);
+// @import "../../../node_modules/@angular/material/prebuilt-themes/purple-green.css" only screen and (prefers-color-scheme: dark);
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css" only screen and (prefers-color-scheme: light);
+@import "~@angular/material/prebuilt-themes/purple-green.css" only screen and (prefers-color-scheme: dark);
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

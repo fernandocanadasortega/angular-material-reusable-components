@@ -30,7 +30,18 @@
               "projects/showcase/src/assets"
             ],
             "styles": [
-              "projects/showcase/src/styles.scss"
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "projects/showcase/src/styles.scss",
+              {
+                "input": "projects/components/styles/dark-theme/dark-theme.scss",
+                "bundleName": "_dark_theme",
+                "inject": false
+              },
+              {
+                "input": "projects/components/styles/light-theme/light-theme.scss",
+                "bundleName": "_light_theme",
+                "inject": false
+              }
             ],
             "scripts": []
           },
@@ -93,6 +104,7 @@
               "projects/showcase/src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "projects/showcase/src/styles.scss"
             ],
             "scripts": []
